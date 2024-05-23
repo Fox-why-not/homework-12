@@ -1,17 +1,18 @@
+import java.util.Objects;
+
 public class Author {
-        private String name;
-        private String lastName;
+        private final String name;
+        private final String lastName;
 
         public Author (String name, String lastName) {
             this.name = name;
             this.lastName = lastName;
         }
 
-        public String getName() {
-            return this.name;
-        }
-
-        public String getLastName() {
-            return this.lastName;
-        }
+    public String toString() {
+        return this.name + this.lastName;
     }
+    public int hashCode() {
+            return Objects.hash(name,lastName);
+    }
+}

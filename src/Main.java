@@ -7,9 +7,9 @@ public class Main {
         Author DEN = new Author("DEN", "DA");
         Book fuuulk = new Book("Фак", DEN, currentYear);
 
-        System.out.println("Автора книги - " + fuuulk.getName() + " зовут " + DEN.getName() + " " + DEN.getLastName() + ", год издания книги " + fuuulk.getPublicationYear());
+        System.out.println(fuuulk);
         fuuulk.setPublicationYear(2011);
-        System.out.println("Автора книги - " + fuuulk.getName() + " зовут " + DEN.getName() + " " + DEN.getLastName() + ", год издания книги " + fuuulk.getPublicationYear());
+        System.out.println(fuuulk);
 
         Author Fox = new Author("Fox", "WhyNot");
         Book AboutMyPain = new Book("AboutMyPain", Fox, currentYear);
@@ -17,6 +17,7 @@ public class Main {
         Author Lexa = new Author("Lexa", "Chighow");
         Book ForWakeUp = new Book("100ForWakeUp", Lexa, currentYear);
 
+        System.out.println(Fox.equals(Lexa));
 
     }
 }

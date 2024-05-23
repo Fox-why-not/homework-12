@@ -12,22 +12,14 @@ public class Book {
 
     }
 
-    public String getName() {
-        return this.name;
-    }
-
-    public Author getAuthor() {
-        return this.author;
-    }
-
-
-
-    public int getPublicationYear() {
-        return this.publicationYear;
-    }
-
     public void setPublicationYear (int publicationYear){
         this.publicationYear = publicationYear;
     }
+
+    public String toString() {
+        return "Имя " + this.name + ", Author " + this.publicationYear;
+    }
+
+
 }
 
