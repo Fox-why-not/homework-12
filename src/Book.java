@@ -1,12 +1,14 @@
-public class Book {
-    private String name;
-    private Author author;
-    private int publicYear;
+import java.time.LocalDate;
 
-    public Book(String name, Author author, int publicYear) {
+public class Book {
+    private final String name;
+    private final Author author;
+    private int publicationYear;
+
+    public Book(String name, Author author, int publicationYear) {
         this.name = name;
         this.author = author;
-        this.publicYear = publicYear;
+        this.publicationYear = publicationYear;
 
     }
 
@@ -20,12 +22,12 @@ public class Book {
 
 
 
-    public int getPublicYear() {
-        return this.publicYear;
+    public int getPublicationYear() {
+        return this.publicationYear;
     }
 
-    public void setPublicYear (int publicYear){
-        this.publicYear = publicYear;
+    public void setPublicationYear (int publicationYear){
+        this.publicationYear = publicationYear;
     }
 }
 
