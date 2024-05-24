@@ -1,4 +1,5 @@
 import java.time.LocalDate;
+import java.util.Objects;
 
 public class Book {
     private final String name;
@@ -12,7 +13,7 @@ public class Book {
 
     }
 
-    public void setPublicationYear (int publicationYear){
+    public void setPublicationYear(int publicationYear) {
         this.publicationYear = publicationYear;
     }
 
@@ -20,6 +21,8 @@ public class Book {
         return "Имя " + this.name + ", Author " + this.publicationYear;
     }
 
-
+    public int hashCode() {
+        return Objects.hash(name, author, publicationYear);
+    }
 }
 
